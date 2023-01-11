@@ -4,7 +4,7 @@ import Home from './components/pages/Home';
 import Company from './components/pages/Company';
 import NewProject from './components/pages/NewProject';
 import Contact from './components/pages/Contact';
-import Projects from './components/pages/Projects/Projects';
+import Projects from './components/pages/Projects';
 
 import Container from './components/layout/Container';
 import Footer from './components/layout/Footer';

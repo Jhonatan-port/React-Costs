@@ -1,5 +1,4 @@
 import { useNavigate } from 'react-router-dom'
-
 import styles from './NewProject.module.css'
 import ProjectForm from '../../ProjectForm'
 
@@ -21,14 +20,14 @@ function NewProject() {
         })
           .then((resp) => resp.json())
           .then((data) => {
-            history('/projects', { message: 'Projeto criado com sucesso!' })
+            history('/projects',{state: { message: 'Projeto criado com sucesso!' }})
           })
       }
 
     return (
         <div className={styles.newproject__container}>
             <h1>Criar projeto</h1>
-            <p>Crie seu projeto apra adicionar o seu serviço.</p>
+            <p>Crie seu projeto para adicionar o seu serviço.</p>
             <ProjectForm handleSubmit={createPost} btnText="Criar Projeto" />
         </div>
     )
